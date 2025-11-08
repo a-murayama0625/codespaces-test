@@ -1,0 +1,11 @@
+{
+  "name": "python-aws",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "settings": { "terminal.integrated.defaultProfile.linux": "bash" },
+  "postCreateCommand": "pipx install poetry && poetry --version",
+  "remoteUser": "vscode"
+}
